@@ -21,4 +21,9 @@
     <string name="img_logo">Logo</string>
     <string name="register">register</string>
     <string name="forgot_password">Forget Password</string>
+    <string name="etemail">Email</string>
+    <string name="etphone_number">Phone Number</string>
+    <string name="etnamalengkap">Nama Lengkap</string>
+    <string name="have_account">Have Account</string>
+    <string name="tvsign_in2">Sign In</string>
 </resources>
