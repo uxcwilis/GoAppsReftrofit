@@ -10,6 +10,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="or">OR</string>
 
     <string name="home_second">Home Second</string>
     <string name="menu_developer">Developer</string>
@@ -18,4 +19,6 @@
     <string name="tv_createaccount">Create a new Account !</string>
     <string name="tv_silahkan">Silahkan login untuk memakai aplikasi</string>
     <string name="img_logo">Logo</string>
+    <string name="register">register</string>
+    <string name="forgot_password">Forget Password</string>
 </resources>

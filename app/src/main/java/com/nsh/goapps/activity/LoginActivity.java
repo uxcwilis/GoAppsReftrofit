@@ -22,9 +22,9 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.login_relative);
 
-        login = (Button) findViewById(R.id.btnLogin);
-        username = (EditText) findViewById(R.id.etUsername);
-        password = (EditText) findViewById(R.id.etPassword);
+      //  login = (Button) findViewById(R.id.);
+      //  username = (EditText) findViewById(R.id.etUsername);
+       // password = (EditText) findViewById(R.id.etPassword);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
