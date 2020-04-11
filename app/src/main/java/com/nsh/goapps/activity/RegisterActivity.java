@@ -10,7 +10,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate (Bundle saveInstanceState)
     {
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.login_relative);
+        setContentView(R.layout.activity_registeruser);
 
     }
 }
