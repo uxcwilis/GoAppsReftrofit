@@ -134,7 +134,7 @@
                 android:text="@string/tv_createaccount"/>
 
             <TextView
-                android:id="@+id/register"
+                android:id="@+id/tvregister"
                 android:layout_toEndOf="@+id/tv01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
