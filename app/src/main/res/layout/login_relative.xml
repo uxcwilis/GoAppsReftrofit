@@ -54,7 +54,7 @@
                 android:textColor="#100b20">
 
                 <EditText
-                    android:id="@+id/username"
+                    android:id="@+id/etusername"
                     android:textSize="15sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                 android:textColor="#100b20">
 
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/etpassword"
                     android:textSize="15sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
