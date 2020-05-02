@@ -53,7 +53,7 @@
                 android:textColor="#100b20">
 
                 <EditText
-                    android:id="@+id/usernameReg"
+                    android:id="@+id/etusername"
                     android:textSize="15sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                 android:textColor="#100b20">
 
                 <EditText
-                    android:id="@+id/passwordReg"
+                    android:id="@+id/etpassword"
                     android:textSize="15sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                 android:textColor="#100b20">
 
                 <EditText
-                    android:id="@+id/email_reg"
+                    android:id="@+id/etemail"
                     android:textSize="15sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                 android:textColor="#100b20">
 
                 <EditText
-                    android:id="@+id/phoneReg"
+                    android:id="@+id/ethp"
                     android:textSize="15sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -153,7 +153,7 @@
                 android:textColor="#100b20">
 
                 <EditText
-                    android:id="@+id/nameReg"
+                    android:id="@+id/etnama"
                     android:textSize="15sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:id="@+id/btnDaftar"
+            android:id="@+id/btnsave"
             android:layout_below="@id/line"
             android:background="@drawable/btn_create_acc"
             android:layout_centerInParent="true"/>
@@ -186,7 +186,7 @@
         <RelativeLayout
             android:layout_centerInParent="true"
             android:layout_marginTop="6dp"
-            android:layout_below="@+id/btnDaftar"
+            android:layout_below="@+id/btnsave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 

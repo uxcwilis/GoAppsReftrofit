@@ -1,15 +1,20 @@
 package com.nsh.goapps.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.stetho.Stetho;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 import com.nsh.goapps.R;
+import com.nsh.goapps.utils.SessionManager;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -23,18 +28,27 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 
+    SessionManager sessionManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        //menerima data yang di krim dari putExtra
-        String usersucceslogin = getIntent().getStringExtra("USERNAME");
-
-
-
-
         setSupportActionBar(toolbar);
+
+        Stetho.initializeWithDefaults(this);
+
+        sessionManager = new SessionManager(this);
+        if (!sessionManager.isLogginIN())
+        {
+            Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
+            startActivity(intent);
+            finish();
+        }
+
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.nav_view);
 
         View headerView = navigationView.getHeaderView(0);
-        TextView navUsername = (TextView) headerView.findViewById(R.id.tvusername);
+     //   TextView navUsername = (TextView) headerView.findViewById(R.id.tvusername);
 
-        navUsername.setText(""+usersucceslogin);
-        Toast.makeText(getApplicationContext(),"welcome"+usersucceslogin,Toast.LENGTH_SHORT).show();
+     //   navUsername.setText(""+usersucceslogin);
+     //   Toast.makeText(getApplicationContext(),"welcome"+usersucceslogin,Toast.LENGTH_SHORT).show();
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -69,6 +83,25 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId()==R.id.action_settings) {
+            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(mIntent);
+        }
+        else if (item.getItemId()==R.id.action_logout)
+        {
+            Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
+            startActivity(intent);
+            finish();
+        }
+
+        return  super.onOptionsItemSelected(item);
+    }
+
+
 
     @Override
     public boolean onSupportNavigateUp() {

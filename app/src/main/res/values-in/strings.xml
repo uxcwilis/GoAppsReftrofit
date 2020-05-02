@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GoApps</string>
+    <string name="navigation_drawer_open">Buka Menu navigasi</string>
+    <string name="navigation_drawer_close">Tutup Menu navigasi</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Main Navigasi</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gambar</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="or">OR</string>
+    <string name="home_second">Tampilan Kedua</string>
+    <string name="menu_developer">Pengembang</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Kata Sandi</string>
+    <string name="tv_createaccount">Buat Account BAru !</string>
+    <string name="tv_silahkan">Silahkan login untuk memakai aplikasi</string>
+    <string name="img_logo">Logo</string>
+    <string name="register">Daftar</string>
+    <string name="forgot_password">Lupa Password</string>
+    <string name="etemail">Email</string>
+    <string name="etphone_number">Nomor Handphone</string>
+    <string name="etnamalengkap">Nama Lengkap</string>
+    <string name="have_account">Sudah Punya Account</string>
+    <string name="tvsign_in2">Login</string>
+</resources>
